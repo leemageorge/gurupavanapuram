@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* :root {
+  --background: #FFBF00;
+  --foreground: #FFD54F;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+body {
+  background-color: #f7d15e;
+  font-family: var(--font-gayathri), sans-serif;
+}
+@keyframes spinRashichakra {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinRashichakra 10s linear infinite;
+}

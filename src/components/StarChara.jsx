@@ -1,0 +1,44 @@
+'use client'
+import Image from 'next/image'
+import React, { useState } from 'react'
+import SmallBanner from "../assets/images/smallbanner.png"
+import nakshatra from "../data/nakshatra.json"
+
+const StarChara = () => {
+  const [selectedStar, setSelectedStar] = useState(null);
+
+  const handleSelect = (e) => {
+    const selectedName = e.target.value;
+    const starObject = nakshatra.find(star => star.name === selectedName);
+    setSelectedStar(starObject || null);
+  };
+
+  return (
+    <div className='min-h-[80vh] lg:min-h-28 relative h-70 w-full'>
+      <Image src={SmallBanner} alt="SmallBanner" fill className='w-full h-full object-cover' />
+      <div className='absolute top-0 right-0 w-full h-full bg-black/40 flex flex-col items-center justify-center space-y-4'>
+        <h2 className='text-amber-100  text-xl xs:text-3xl lg:text-5xl mt-5 px-3 font-bold text-center'>"നക്ഷത്രം പറയുന്നു, നിങ്ങൾ ആരാണെന്ന്!"</h2>
+
+        <select
+          className='border-2 border-amber-200 text-amber-100 p-2 rounded-md text-lg'
+          onChange={handleSelect}
+        >
+          <option value="" className='text-red-700 hover:bg-amber-300'>അശ്വതി</option>
+          {nakshatra.map((star) => (
+            <option key={star.name} value={star.name} className='text-red-700 '>{star.name}</option>
+          ))}
+             
+        </select>
+
+        {selectedStar && (
+          <div className='bg-transparent shadow-md p-4 rounded max-w-screen px-8 lg:px-16 w-full text-[#fdf5de]'>
+         
+            <p className='text-center text-md xs:text-lg lg:text-2xl'>{selectedStar.description}</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default StarChara;
