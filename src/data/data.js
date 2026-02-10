@@ -20,37 +20,37 @@ export const navLinks = [
     },
 ];
 
-export const sercicesDropdown = [
-      {
-        title: "പ്രശ്‌നം",
-        url: "/services"
-     },
-     {
-        title: "ജാതകം",
-        url: "/services"
-     },
-      {
-        title: "മുഹൂർത്തം",
-        url: "/services"
-     },
-      {
-        title: "പൊരുത്തം",
-        url: "/services"
-     },
-      {
-        title: "ഗ്രഹനില ",
-        url: "/services"
-     },
-      {
-        title: "താമ്പൂല പ്രശ്നം",
-        url: "/services"
-     },
-      {
-        title: "പരിഹാര പൂജകൾ",
-        url: "/services"
-     },
+// export const sercicesDropdown = [
+//       {
+//         title: "പ്രശ്‌നം",
+//         url: "/prashnam"
+//      },
+//      {
+//         title: "ജാതകം",
+//         url: "/jathakam"
+//      },
+//       {
+//         title: "മുഹൂർത്തം",
+//         url: "/services"
+//      },
+//       {
+//         title: "പൊരുത്തം",
+//         url: "/services"
+//      },
+//       {
+//         title: "ഗ്രഹനില ",
+//         url: "/services"
+//      },
+//       {
+//         title: "താമ്പൂല പ്രശ്നം",
+//         url: "/services"
+//      },
+//       {
+//         title: "പരിഹാര പൂജകൾ",
+//         url: "/services"
+//      },
     
-]
+// ]
 
 import prasnam from "../assets/images/prasnam1.jpg";
 import jathakam from "../assets/images/jathakam.png";

@@ -6,7 +6,7 @@ import Logo from '../assets/images/redlogo.png'
 import facebook from "../../public/facebook.svg"
 import instagram from "../../public/instagram.svg"
 import menu from "../../public/menu2.svg"
-import { navLinks, sercicesDropdown } from '@/data/data'
+import { navLinks } from '@/data/data'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -28,22 +28,22 @@ const Navbar = () => {
         {/* Desktop Nav Links */}
         <div className="hidden md:flex gap-6 items-center">
           {navLinks.map((link) => (
-            link.title === "Services" ? (
-              <div className="relative group" key={link.title}>
-                <span className="cursor-pointer text-lg font-bold ">{link.title}</span>
-                <div className="absolute top-full left-0 hidden group-hover:flex flex-col gap-2 bg-amber-300 text-red-700 shadow-md rounded-md min-w-[200px] text-base py-2 z-50">
-                  {sercicesDropdown.map((list) => (
-                    <Link href={list.url} key={list.title} className="px-4 py-1 hover:bg-red-700 hover:text-amber-300 rounded-full transition ease-in-out">
-                      {list.title}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ) : (
+            // link.title === "Services" ? (
+            //   <div className="relative group" key={link.title}>
+            //     <span className="cursor-pointer text-lg font-bold ">{link.title}</span>
+            //     <div className="absolute top-full left-0 hidden group-hover:flex flex-col gap-2 bg-amber-300 text-red-700 shadow-md rounded-md min-w-[200px] text-base py-2 z-50">
+            //       {sercicesDropdown.map((list) => (
+            //         <Link href={list.url} key={list.title} className="px-4 py-1 hover:bg-red-700 hover:text-amber-300 rounded-full transition ease-in-out">
+            //           {list.title}
+            //         </Link>
+            //       ))}
+            //     </div>
+            //   </div>
+            // ) : (
               <Link href={link.url} key={link.title} className="cursor-pointer text-lg font-bold">
                 {link.title}
               </Link>
-            )
+            // )
           ))}
         </div>
 

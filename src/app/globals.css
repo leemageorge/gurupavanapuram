@@ -34,3 +34,59 @@ body {
 .animate-spin-slow {
   animation: spinRashichakra 10s linear infinite;
 }
+/* Initial hidden state */
+/* Hidden state */
+.brush-hide {
+  -webkit-mask-image: url("/brush.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+  -webkit-mask-size: 0% 100%;
+
+  mask-image: url("/brush.png");
+  mask-repeat: no-repeat;
+  mask-position: left center;
+  mask-size: 0% 100%;
+}
+
+/* Brush reveal */
+.brush-reveal {
+  -webkit-mask-image: url("/brush.png");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: left center;
+
+  mask-image: url("/brush.png");
+  mask-repeat: no-repeat;
+  mask-position: left center;
+
+  animation: brushPaint 3.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Natural brush motion */
+@keyframes brushPaint {
+  0% {
+    -webkit-mask-size: 0% 100%;
+    mask-size: 0% 100%;
+  }
+
+  20% {
+    -webkit-mask-size: 15% 100%;
+    mask-size: 15% 100%;
+  }
+
+  45% {
+    -webkit-mask-size: 45% 100%;
+    mask-size: 45% 100%;
+  }
+
+  70% {
+    -webkit-mask-size: 85% 100%;
+    mask-size: 85% 100%;
+  }
+
+  100% {
+    -webkit-mask-size: 150% 100%;
+    mask-size: 150% 100%;
+    
+  }
+}
+

@@ -1,0 +1,26 @@
+import React from 'react'
+import Image from 'next/image'
+import porootham from "../assets/images/porutham.png"
+const Porutham = () => {
+  return (
+       <div className='container mx-auto px-6 md:px-10 py-10  max-w-5xl overflow-hidden'>
+             <h2 className='text-2xl md:text-4xl font-bold  text-red-700 text-center mb-6'>പൊരുത്തം</h2>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+        <div className=' flex flex-col space-y-2 p-8'>
+           
+            <p className='text-lg text-gray-600 text-justify'>പൊരുത്തം എന്നത് രണ്ട് ആത്മാക്കളുടെ സ്വഭാവവും ചിന്തകളും ജീവിതപാതകളും തമ്മിലുള്ള മനോഹരമായ ഐക്യമാണ്. രണ്ട് മനസ്സുകളുടെ
+നക്ഷത്രസമന്വയമാണ് പൊരുത്തം.നക്ഷത്രങ്ങളും ഗുണങ്ങളും ഒത്തുചേരുമ്പോൾ പരസ്പര ബഹുമാനവും മനസ്സിലാക്കലും നിറഞ്ഞ ബന്ധം രൂപപ്പെടുന്നു. ശക്തമായ പൊരുത്തം ദാമ്പത്യജീവിതത്തിന് സമാധാനവും വിശ്വാസവും ഒരുമിച്ച് വളരാനുള്ള ശക്തിയും സമ്മാനിക്കുന്നു.</p>
+     <a href="tel:9633443047"> <button className='cursor-pointer bg-amber-400 text-red-700 px-6 md:px-8 py-1 md:py-2 mt-2 rounded-tr-full rounded-bl-full font-bold text-sm md:text-lg'>പൊരുത്തം നോക്കാനായി വിളിക്കുക </button></a>
+        </div>
+       
+            <div className="w-full h-96 bg-gray-200 flex items-center justify-center">
+                <Image src={porootham} alt="introImg" className='w-full h-full object-cover border-2 border-red-700 rounded-lg' width={500} height={500} />
+            </div>
+        </div>
+    
+       
+        </div>
+  )
+}
+
+export default Porutham
