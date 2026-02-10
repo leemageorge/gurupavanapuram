@@ -58,18 +58,9 @@ const Navbar = () => {
       {menuOpen && (
         <div className=" bg-amber-300 min-h-screen  text-red-700 px-4 py-4 flex flex-col gap-4 font-bold">
           {navLinks.map((link) => (
-            link.title === "Services" ? (
-              <div key={link.title}>
-                <div className="font-semibold">{link.title}</div>
-                <div className="ml-4 flex flex-col gap-2 text-base text-red-700">
-                  {sercicesDropdown.map((list) => (
-                    <Link href={list.url} key={list.title} className="hover:underline  hover:bg-red-700 hover:text-amber-300 rounded-full px-4 py-1 w-fit">{list.title}</Link>
-                  ))}
-                </div>
-              </div>
-            ) : (
+           
               <Link href={link.url} key={link.title} className="text-lg">{link.title}</Link>
-            )
+            
           ))}
 
           {/* Mobile Social Links */}
