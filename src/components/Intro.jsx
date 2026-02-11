@@ -12,10 +12,10 @@ const Intro = () => {
           <Image src={introImg} alt="introImg" className='w-full h-full object-cover border-2 border-red-700 rounded-lg' width={500} height={500} />
         </div>
 
-        <div className="text-center lg:text-left">
+        <div className="text-center">
           <h1 className="text-2xl md:text-4xl font-bold mb-4  text-red-700">Gurupavanapuram Jyothishalayam</h1>
           <p className="text-lg text-gray-600">In the light of traditional astrological wisdom, we guide your life’s journey with clarity and confidence. With trust and hope — a reliable destination for answers to your life’s deepest questions.</p>
-         <Link href="/about"> <button className='cursor-pointer bg-amber-400 text-red-700 px-6 md:px-8 py-1 md:py-2 mt-2 rounded-tr-full rounded-bl-full font-bold text-sm md:text-lg'>Know more</button></Link>
+         <Link href="/about"> <button className='cursor-pointer bg-amber-400 text-red-700 px-6 md:px-8 py-1 md:py-2 mt-2 rounded-tr-full rounded-bl-full font-bold text-lg md:text-xl'>Know more</button></Link>
         </div>
 </div>
       </div>

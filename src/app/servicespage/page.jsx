@@ -24,7 +24,7 @@ const servicespage = () => {
  <div>
    <Image src={newsletter} alt='news letter' className='w-full h-64 object-cover' />
   <div className='absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 space-y-2'>
-     <h2 className=' text-2xl font-bold leading-snug tra'> ‘ഓം ഭൂർ ഭുവഃ സ്വഃ<br/>  തത് സവിതുർ വരേണ്യം <br/> ഭർഗോ ദേവസ്യ ധീമഹി <br /> ധിയോ യോ നഃ പ്രചോദയാത് ’
+     <h2 className='text-md md:text-2xl font-bold leading-snug '> ‘ഓം ഭൂർ ഭുവഃ സ്വഃ<br/>  തത് സവിതുർ വരേണ്യം <br/> ഭർഗോ ദേവസ്യ ധീമഹി <br /> ധിയോ യോ നഃ പ്രചോദയാത് ’
 
 </h2>
 

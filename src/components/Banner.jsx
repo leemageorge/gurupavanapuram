@@ -16,10 +16,10 @@ const Banner = () => {
           <h2 className='text-2xl '>പ്രവീൺ ശാന്തി </h2>
           <h3 className='text-xl '>ചൂഴാൽ ശ്രീകൃഷ്ണസ്വാമി ക്ഷേത്രം</h3>
         </div>
-        <button className='bg-red-700 text-amber-300 px-4 md:px-8 py-1 mt-3 lg:mt-5 md:py-2  w-fit rounded-tr-full rounded-bl-full font-bold text-sm md:text-lg'>Call me</button>
+        <a href='tel:+19633443047'><button className='bg-red-700 text-amber-300 px-6 md:px-8 py-1 mt-3 lg:mt-5 md:py-2  rounded-tr-full rounded-bl-full font-bold text-lg md:text-xl'>Call me</button></a>
       </div>
       <div>
-        <Image src={RashiChakra} width={350} height={350} className=' animate-spin-slow' alt='rashi chakra'/>
+        <Image src={RashiChakra} width={300} height={300} className='object-cover animate-spin-slow' alt='rashi chakra'/>
       </div>
       </div>
       </div>

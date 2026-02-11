@@ -5,6 +5,8 @@ import SmallBanner from "../assets/images/smallbanner.png"
 import nakshatra from "../data/nakshatra.json"
 
 const StarChara = () => {
+    const defaultDescription ="അശ്വതി നക്ഷത്രക്കാർ ചുരുങ്ങിയ സമയത്തിനുള്ളിൽ കാര്യങ്ങൾ കൈകാര്യം ചെയ്യുന്നതിൽ കഴിവുള്ളവരാണ്. ഇവർ തീക്ഷണവും സജീവവുമാണ്. ശക്തിയുള്ള തുടക്കംവയ്ക്കലിൽ അവർ മുന്നിലിരിക്കും.";
+ 
   const [selectedStar, setSelectedStar] = useState(null);
 
   const handleSelect = (e) => {
@@ -30,12 +32,13 @@ const StarChara = () => {
              
         </select>
 
-        {selectedStar && (
           <div className='bg-transparent shadow-md p-4 rounded max-w-screen px-8 lg:px-16 w-full text-[#fdf5de]'>
-         
-            <p className='text-center text-lg md:text-xl'>{selectedStar.description}</p>
-          </div>
-        )}
+          <p className='text-center text-lg md:text-xl'>
+            {selectedStar
+              ? selectedStar.description
+              : defaultDescription}
+          </p>
+        </div>
       </div>
     </div>
   );
