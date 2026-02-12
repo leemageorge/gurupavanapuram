@@ -8,15 +8,15 @@ import consultation from "../../assets/images/consultation.svg"
 
 const Contact = () => {
   return (
-    <div className='min-h-[100vh] md:min-h-screen w-full relative mt-12 px-10 py-44 overflow-hidden '>
+    <div className='min-h-[60vh] md:min-h-screen w-full relative  mt-12  px-10  overflow-hidden '>
       {/* mobile view */}
       <Image src={mobileContact} alt='mobile contact image' fill priority className='block md:hidden absolute object-cover' />
       {/* desktop view */}
       <Image src={contactbg} alt='desktop image' fill priority className='hidden md:block absolute object-cover'/>
       <div className='absolute bg-black/50 inset-0'></div>
-      <div className='relative min-h-screen z-10 text-center mx-auto max-w-5xl'>
+      <div className='relative  mt-36 text-center mx-auto max-w-5xl mb-6'>
        <div>
-         <h2 className='text-xl md:text-3xl font-bold text-amber-100 capitalize '>Connect with Divine Guidance</h2>
+         <h2 className='text-2xl md:text-4xl font-bold text-amber-100 capitalize '>Connect with Divine Guidance</h2>
         <p className='text-amber-100 text-sm md:text-md italic'>Get personalized astrology consultation</p>
        </div>
        <div className='flex  items-center justify-center gap-6  mt-6'>
