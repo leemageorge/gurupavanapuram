@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import mobileContact from "../../assets/images/mobilecontactbg.png";
 import contactbg from "../../assets/images/contactbg.png";
+import { motion } from "framer-motion";
 // import call from "../../assets/images/call.svg"
 // import location from "../../assets/images/location.svg"
 import consultation from "../../assets/images/consultation.svg";
@@ -28,14 +30,29 @@ const Contact = () => {
       <div className="absolute bg-black/50 inset-0"></div>
       <div className="relative  mt-36 text-center mx-auto max-w-5xl mb-6">
         <div>
-          <h2 className="text-2xl md:text-4xl font-bold text-amber-100 capitalize ">
+          <motion.h2 className="text-2xl md:text-4xl font-bold text-amber-100 capitalize "
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once:false}}
+            transition={{ duration: 0.5 }}
+          >
             Connect with Divine Guidance
-          </h2>
-          <p className="text-amber-100 text-sm md:text-md italic">
+          </motion.h2>
+          <motion.p className="text-amber-100 text-sm md:text-md italic"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{once:false}}
+            transition={{ duration: 0.5 }}
+          >
             Get personalized astrology consultation
-          </p>
+          </motion.p>
         </div>
-        <div className="flex  items-center justify-center gap-6  mt-6">
+        <motion.div className="flex  items-center justify-center gap-6  mt-6"
+          initial={{ opacity: 0, x:-60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{once:false}}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <div className="flex  items-center gap-2 bg-amber-100 text-amber-900 px-1 py-1 w-fit rounded-bl-xl  rounded-tr-xl ">
             <div className="border-1 border-amber-900 px-2 md:px-4 py-1 rounded-bl-xl  rounded-tr-xl flex items-center justify-center gap-2">
               {/* <Image src={call} /> */}
@@ -66,8 +83,13 @@ const Contact = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div className="bg-amber-100 max-w-3xl mx-auto mt-10 p-2 rounded-bl-4xl rounded-tr-4xl ">
+        </motion.div>
+        <motion.div className="bg-amber-100 max-w-3xl mx-auto mt-10 p-2 rounded-bl-4xl rounded-tr-4xl "
+          initial={{ opacity: 0, x: 60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{once:false}}
+          transition={{ duration: 0.8, delay: 0.4 }}
+        >
           <div className="border-2 border-amber-900 rounded-bl-4xl rounded-tr-4xl ">
             <form className="py-6  ">
               <div className="space-y-2">
@@ -109,7 +131,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-        </div>
+        </motion.div>
         <div className="flex mt-12 mx-auto w-1/2">
           {/* <div className='bg-amber-100 p-1 rounded-bl-xl rounded-tr-xl '>
          
