@@ -4,7 +4,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-6 mt-0">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         
         {/* Left side - Brand or Text */}
         <div className="text-center md:text-left text-sm">
